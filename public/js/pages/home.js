@@ -1,5 +1,4 @@
-
-  function home() {
+/*   function home() {
     let elmnt = 'rrrr';
     return (<div id="contentPg">
         <h1 class="p-relative">maison page</h1>
@@ -27,4 +26,9 @@
           <li></li>
         </ul>
       </div>);
-  }
+  } */
+
+function abdou(a) {
+  document.getElementById("abdouDadi").innerHTML = a.abd;
+  document.getElementById("adai").innerHTML = a.gggggg;
+}

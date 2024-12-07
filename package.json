@@ -1,0 +1,17 @@
+{
+  "name": "stocksmanagement",
+  "version": "1.0.0",
+  "description": "stocks manegement",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "minify:JSFolderOne":"uglifyjs-folder ./public/js -o ./public/js.min.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "uglifyjs-folder": "^3.3.0"
+  }
+}
