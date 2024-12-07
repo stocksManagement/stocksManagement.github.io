@@ -84,7 +84,6 @@ function head() {
 }
 
 function gebi(pr) {
-  document.getElementById("gebi").innerHTML = "eeeet";
   return document.getElementById(pr);
 }
 
