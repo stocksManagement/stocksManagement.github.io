@@ -1,100 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUDS</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="crud">
-        <div class="head">
-            <h2>CRUDS</h2>
-            <p>product management system</p>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./public/css/style.min.css" />
+    <link rel="stylesheet" href="./public/css/all.min.css" />
+    <!--   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" /> -->
+  </head>
 
-        <p>whdkhra</p>
-        <div class="inputs">
-            <input placeholder="Nom de produit" type="text" id="title" >
-            <input placeholder="Catégorie" type="text" id="category">
-            <input placeholder="Personne" type="text" id="person">
-            <input placeholder="Note" type="text" id="note">
-            <input placeholder="Codbar" type="text" id="codbar">
-            <div class="price">
-                <input onkeyup="getTotal()" type="number" id="price" placeholder="Prix">
-                <input onkeyup="getTotal()" type="number" id="count" placeholder='Quantité : "par défaut 1"'>
-                <small id="total"></small>
-                
-            </div>
-            <button  id="submit">Ajoutié</button>
-            <p id="okMsg"></p>
-        </div>
-     <!--    <div id="prmrRslt">
-            <table id="tresltPrmiem" >
-                <tr>
-                    <th>id</th>
-                    <th>Nom</th>
-                    <th>Catégorie</th>
-                    <th>Personne</th>
-                    <th>Note</th>
-                    <th>Codbar</th>
-                    <th>price</th>
-                    <th>Quantité</th>
-                    <th>total</th>
-                    <th>update</th>
-                    <th>delet</th>
-                </tr>
-                <tbody id="tbodyPremiem">
-                    
-                </tbody>
-            </table>
-            <div>
-                <button   >Imprimer</button>
-                <button   >Ajoutié dans la liste</button> 
-            </div>
-        </div> -->
-        
-<hr style="margin: 10px auto 15px;">
+  <body class="page d-flex">
+    <div id="sidebar" ti class="sidebar bg-white p-20 p-relative"></div>
 
-        <div class="outputs">
-            <div class="searchBlock">
-                <p style="text-align: center; font-size: 27px;font-weight:bold;margin: 15px;">Chercher par </p>
-                <div class="btnSearch">
-                    <button   data-srch="title">le Nom</button>
-                    <button   data-srch="codbar">Codbar</button>
-                    <button   data-srch="category">Catégorie</button>
-                </div>
-                <div class="btnSearch">
-                    <button   data-srch="person">personne</button>
-                    <button   data-srch="note">Note</button>
-                </div>
-                <input onkeyup="searchData(this.value)" type="search"  id="search" placeholder="Chercher par le Nom">
-                
-            </div>
+    <div class="content w-full">
+      
+      <!-- head continer -->
+      <div id="headPg" class="head bg-white p-15 between-flex"></div>
 
-        </div>
+      <!-- start page -->
+      <div id="contentPg">
+        <h1 class="p-relative">maison page</h1>
+        <ul class="linksDv">
+          <li>
+            <!-- <img src="../imgs/svgs/avatar-vectormaker-co.svg#avatar" alt=""> -->
+            <!-- <i class="fa-solid fa-gauge-high"></i> -->
+            <i class="stock"></i>
+            Tableau de bord [F1]
+          </li>
+          <li>
+            <i class="fa-solid fa-user-group"></i>
+            Clients et Fournisseurs [F2]
+          </li>
+          <li>
+            <i class="fa-solid fa-headset"></i>
+            utilisateurs [F3]
+          </li>
+          <li>
+            <!-- <img class="stock" alt=""> -->
+            <i class="stock"></i>
+            stock [F4]
+          </li>
 
-        <table>
-            <tr>
-                <th>id</th>
-                <th>Nom</th>
-                <th>Catégorie</th>
-                <th>Personne</th>
-                <th>Note</th>
-                <th>Codbar</th>
-                <th>price</th>
-                <th>Quantité</th>
-                <th>total</th>
-                <th>update</th>
-                <th>delet</th>
-            </tr>
-            <tbody id="tbody">
-            </tbody>
-        </table>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+
+      <!-- end page -->
     </div>
-   
-    
 
-    <script src="main.js"></script>
-</body>
+    <script type="module" src="./js.min.js"></script>
+  </body>
 </html>
