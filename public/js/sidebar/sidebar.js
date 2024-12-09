@@ -36,37 +36,47 @@ function sidebar() {
   return ` <i class="logo"></i>
       <ul>
         ${ils}
-      </ul>`;
+      </ul>
+      <div class="exit" ></div>
+      `;
 }
 
 function head() {
-  let elmnt = `<div></div>
-          <!-- <div class="search p-relative">
+  let elmnt = `  <div></div>
+      <!-- <div class="search p-relative">
             <input class="p-10" type="search" placeholder="Type A Keyword" />
           </div> -->
-          <div>
-            <i title="maison page"  class="hosse  iconsDadi"></i>
-            <i class="tools iconsDadi"></i>
-          </div>
-          <div class="icons d-flex align-center">
-            <span class="notification p-relative">
-                <ul>
-                <li><a >Services  hfghgh  afggjh</a><span onclick="console.log('click');
-                ">X</span></li>
-                <li><a >Portfolio</a><span onclick="console.log('click');
-                ">x</span></li>
-                <li><a >About</a><span onclick="console.log('click');
-                ">x</span></li>
-                <li><a >Contact</a><span onclick="console.log('click');
-                ">x</span></li>
-              </ul>
-            </span>
-            <span>abdelhadi slimani</span>
-            <span class="avatar"></span>
-            <!-- <img src="../imgs/svgs/avatar-vectormaker-co.svg" alt=""  />-->
-          </div>
-        </div>
-        <!-- End Head -->`;
+      <div>
+        <i title="maison page" class="hosse iconsDadi"></i>
+        <i class="tools iconsDadi"></i>
+      </div>
+      <div class="icons d-flex align-center">
+        <span class="notification p-relative">
+          <ul>
+            <li>
+              <a>Services hfghgh afggjh</a><span onclick="console.log('click');
+                ">X</span>
+            </li>
+            <li>
+              <a>Portfolio</a><span onclick="console.log('click');
+                ">x</span>
+            </li>
+            <li>
+              <a>About</a><span onclick="console.log('click');
+                ">x</span>
+            </li>
+            <li>
+              <a>Contact</a><span onclick="console.log('click');
+                ">x</span>
+            </li>
+          </ul>
+        </span>
+        <span>abdelhadi slimani</span>
+        <span class="avatar">
+        </span>
+      </div>
+
+      <!-- End Head -->`;
   return elmnt;
 }
 

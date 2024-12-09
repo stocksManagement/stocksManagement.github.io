@@ -97,7 +97,7 @@ ul {
 }
 
 .sidebar ul li a:hover,
-.sidebar ul li a.active {
+.sidebar ul li a.active ,.exit:hover{
   background-color: #ccc;
 }
 
