@@ -1,55 +1,42 @@
 function sidebar() {
-  return ` <h3 class="p-relative txt-c mt-0">Elzero</h3>
-    <ul>
-      <li>
-        <a class="active d-flex align-center fs-14 c-black rad-6 p-10"  data-lien="abdou" >
-          <i class="fa-regular fa-chart-bar fa-fw"></i>
-          <span>Tableau de bord</span>
-        </a>
-      </li>
-      <li>
-        <a class="d-flex align-center fs-14 c-black rad-6 p-10 " >
-          <i class="settings"></i>
-          <span>Settings</span>
-        </a>
-      </li>
-      <li>
-        <a class="d-flex align-center fs-14 c-black rad-6 p-10">
-          <i class="fa-regular fa-user fa-fw"></i>
-          <span>Profile</span>
-        </a>
-      </li>
-      <li>
-        <a class="d-flex align-center fs-14 c-black rad-6 p-10" >
-          <i class="fa-solid fa-diagram-project fa-fw"></i>
-          <span>Projects</span>
-        </a>
-      </li>
-      <li>
-        <a class="d-flex align-center fs-14 c-black rad-6 p-10">
-          <i class="fa-solid fa-graduation-cap fa-fw"></i>
-          <span>Courses</span>
-        </a>
-      </li>
-      <li>
-        <a class="d-flex align-center fs-14 c-black rad-6 p-10" >
-          <i class="fa-regular fa-circle-user fa-fw"></i>
-          <span>Friends</span>
-        </a>
-      </li>
-      <li>
-        <a class="d-flex align-center fs-14 c-black rad-6 p-10" >
-          <i class="fa-regular fa-file fa-fw"></i>
-          <span>Files</span>
-        </a>
-      </li>
-      <li>
-        <a class="d-flex align-center fs-14 c-black rad-6 p-10" >
-          <i class="fa-regular fa-credit-card fa-fw"></i>
-          <span>Plans</span>
-        </a>
-      </li>
-    </ul>`;
+  let elmnts = [
+    {
+      data: "chart-bar",
+      classI: "chart-bar",
+    },
+    {
+      data: "Settings",
+      classI: "settings",
+    },
+    {
+      data: "Profile",
+      classI: "user",
+    },
+    {
+      data: "Courses",
+      classI: "user",
+    },
+    {
+      data: "Friends",
+      classI: "user",
+    },
+    {
+      data: "Files",
+      classI: "user",
+    },
+    {
+      data: "Plans",
+      classI: "user",
+    },
+  ];
+  let ils =``;
+   elmnts.forEach(elemnt => {
+    ils += `<li><a class="d-flex align-center fs-14 c-black rad-6 p-10" data-lien="${elemnt.data}"><i class="${elemnt.classI}"></i><span>${elemnt.data}</span></a></li>`;
+  })
+  return ` <i class="logo"></i>
+      <ul>
+        ${ils}
+      </ul>`;
 }
 
 function head() {
