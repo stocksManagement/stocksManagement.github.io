@@ -15,7 +15,8 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-stretch: semi-condensed;
   margin: 0;
 }
 
@@ -104,6 +105,7 @@ ul {
 .sidebar ul li a i {
   height: 20px;
   width: 20px;
+  background-repeat: no-repeat;
 }
 
 .sidebar ul li a span {

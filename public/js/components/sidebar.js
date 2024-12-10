@@ -1,8 +1,8 @@
 function sidebar() {
   let elmnts = [
     {
-      data: "chart-bar",
-      classI: "chart-bar",
+      data: "chart bar",
+      classI: "chartBar",
     },
     {
       data: "Settings",
@@ -31,7 +31,7 @@ function sidebar() {
   ];
   let ils =``;
    elmnts.forEach(elemnt => {
-    ils += `<li><a class="d-flex align-center fs-14 c-black rad-6 p-10" data-lien="${elemnt.data}"><i class="${elemnt.classI}"></i><span>${elemnt.data}</span></a></li>`;
+    ils += `<li><a class="d-flex align-center fs-14 c-black rad-6 p-10" data-lien="${elemnt.classI}"><i class="${elemnt.classI}"></i><span>${elemnt.data}</span></a></li>`;
   })
   return ` <i class="logo"></i>
       <ul>
